@@ -10,7 +10,7 @@ export const ExampleContext = createContext()
 function App() {
   const [count,setCount] = useState(0)
   return (
-      <ExampleContext.Provider value={count}>
+      <ExampleContext.Provider value={[count,setCount]}>
           <Header count={count} setCount={setCount}></Header>
           <Home></Home>
           <Other></Other>
