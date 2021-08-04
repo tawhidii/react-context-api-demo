@@ -11,7 +11,7 @@ function App() {
   const [count,setCount] = useState(0)
   return (
       <ExampleContext.Provider value={[count,setCount]}>
-          <Header count={count} setCount={setCount}></Header>
+          <Header></Header>
           <Home></Home>
           <Other></Other>
       </ExampleContext.Provider>
