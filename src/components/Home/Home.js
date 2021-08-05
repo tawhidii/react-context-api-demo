@@ -6,7 +6,7 @@ const Home = () => {
     const count = useContext(ExampleContext)
     return (
         <div>
-            <h1>this is header: {count}</h1>
+            <h1>this is home: {count}</h1>
             <Category></Category>
         </div>
     );

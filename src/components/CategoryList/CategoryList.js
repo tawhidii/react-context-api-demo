@@ -1,12 +1,11 @@
-import React, { useContext } from 'react';
-import { ExampleContext } from '../../App';
+import React from 'react';
 
-const CategoryList = () => {
-    const [count,seCount] = useContext(ExampleContext)
+
+const CategoryList = (props) => {
+    const {name} = props.movie
     return (
         <div>
-            <h1>From categorylist: {count}</h1>
-            <button onClick={()=>seCount(count + 1)}> Increase from CategoryList </button>
+            <h1>From categorylist: {name}</h1>
         </div>
     );
 };

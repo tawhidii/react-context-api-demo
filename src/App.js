@@ -8,7 +8,7 @@ import Other from './components/Other/Other';
 export const ExampleContext = createContext()
 
 function App() {
-  const [count,setCount] = useState(0)
+  const [count,setCount] = useState('')
   return (
       <ExampleContext.Provider value={[count,setCount]}>
           <Header></Header>
